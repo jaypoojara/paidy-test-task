@@ -9,11 +9,12 @@ import {
   StyleSheet,
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { ITodoItem } from "../types/interface";
-import TodoItem from "../components/TodoItem";
-import Button from "../components/Button";
-import { colors } from "../types/colors";
-import { asyncStoragekeys } from "../types/asyncStoragekeys";
+import { ITodoItem } from "../../types/interface";
+import TodoItem from "../../components/TodoItem";
+import Button from "../../components/Button";
+import { colors } from "../../types/colors";
+import { asyncStoragekeys } from "../../types/asyncStoragekeys";
+import ListEmpt from "../../components/ListEmpt";
 
 const Home = () => {
   // Ref to FlatList for scrolling
@@ -108,12 +109,7 @@ const Home = () => {
         data={todos}
         keyExtractor={(_, index) => index.toString()}
         renderItem={renderItem}
-        ListEmptyComponent={
-          // Empty container
-          <View style={styles.emptyContainer}>
-            <Text style={styles.emptyText}>Todos not found!</Text>
-          </View>
-        }
+        ListEmptyComponent={<ListEmpt />}
       />
 
       {/* Input container */}
@@ -165,15 +161,5 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     fontWeight: "500",
-  },
-  emptyContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  emptyText: {
-    fontSize: 16,
-    fontWeight: "bold",
-    color: colors.lable,
   },
 });

@@ -1,7 +1,7 @@
 import React from "react";
 import { render, fireEvent, waitFor } from "@testing-library/react-native";
 import * as LocalAuthentication from "expo-local-authentication";
-import Auth from "../Auth";
+import Auth from "../index";
 
 jest.mock("@react-navigation/native", () => ({
   useNavigation: jest.fn(() => ({

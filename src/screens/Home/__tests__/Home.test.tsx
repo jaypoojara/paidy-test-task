@@ -1,7 +1,7 @@
 import React from "react";
 import { render, fireEvent, waitFor } from "@testing-library/react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import Home from "../Home";
+import Home from "../index";
 
 // Mock AsyncStorage methods
 jest.mock("@react-native-async-storage/async-storage", () => ({

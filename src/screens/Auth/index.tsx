@@ -9,9 +9,9 @@ import {
 } from "react-native";
 import * as LocalAuthentication from "expo-local-authentication";
 import { StackActions, useNavigation } from "@react-navigation/native";
-import Button from "../components/Button";
-import { colors } from "../types/colors";
-import { routesKey } from "../types/routesKey";
+import Button from "../../components/Button";
+import { colors } from "../../types/colors";
+import { routesKey } from "../../types/routesKey";
 
 const Auth = () => {
   const appState = useRef(AppState.currentState);

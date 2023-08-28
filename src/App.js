@@ -2,14 +2,14 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import { routesKey } from "./src/types/routesKey";
+import { routesKey } from "./types/routesKey";
 
 // Create a stack navigator instance
 const Stack = createNativeStackNavigator();
 
 // Import your screen components
-import Auth from "./src/screens/Auth";
-import Home from "./src/screens/Home";
+import Auth from "./screens/Auth";
+import Home from "./screens/Home";
 
 // Main App component
 export default function App() {
