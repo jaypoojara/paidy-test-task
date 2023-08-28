@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, StyleSheet, View } from "react-native";
-import { colors } from "../types/colors";
+import { Colors } from "../types/colors";
 
 const ListEmpt = () => {
   return (
@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
   emptyText: {
     fontSize: 16,
     fontWeight: "bold",
-    color: colors.lable,
+    color: Colors.lable,
   },
 });

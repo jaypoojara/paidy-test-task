@@ -10,7 +10,7 @@ import {
 import * as LocalAuthentication from "expo-local-authentication";
 import { StackActions, useNavigation } from "@react-navigation/native";
 import Button from "../../components/Button";
-import { colors } from "../../types/colors";
+import { Colors } from "../../types/colors";
 import { routesKey } from "../../types/routesKey";
 
 const Auth = () => {
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: "flex-end",
     flex: 1,
-    backgroundColor: colors.white,
+    backgroundColor: Colors.white,
     padding: 20,
     alignItems: "center",
   },

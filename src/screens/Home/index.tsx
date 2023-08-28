@@ -12,7 +12,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { ITodoItem } from "../../types/interface";
 import TodoItem from "../../components/TodoItem";
 import Button from "../../components/Button";
-import { colors } from "../../types/colors";
+import { Colors } from "../../types/colors";
 import { asyncStoragekeys } from "../../types/asyncStoragekeys";
 import ListEmpt from "../../components/ListEmpt";
 
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
   headerText: {
     fontSize: 20,
     fontWeight: "bold",
-    color: colors.primary,
+    color: Colors.primary,
     marginBottom: 10,
   },
   flatListContent: {
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
     paddingVertical: 10,
     paddingHorizontal: 15,
-    backgroundColor: colors.white,
+    backgroundColor: Colors.white,
     flexDirection: "row",
     borderRadius: 15,
   },

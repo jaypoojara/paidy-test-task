@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, TouchableOpacity, StyleSheet } from "react-native";
-import { colors } from "../types/colors";
+import { Colors } from "../types/colors";
 import { IButton } from "../types/interface";
 
 // Define the Button component using destructuring for props
@@ -25,11 +25,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30,
     paddingVertical: 12,
     borderRadius: 100,
-    backgroundColor: colors.primary,
+    backgroundColor: Colors.primary,
   },
   bottonText: {
     fontSize: 18,
     fontWeight: "bold",
-    color: colors.white,
+    color: Colors.white,
   },
 });

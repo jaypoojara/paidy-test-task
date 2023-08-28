@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import React from "react";
 import { ITodoComponent } from "../types/interface";
-import { colors } from "../types/colors";
+import { Colors } from "../types/colors";
 
 // TodoItem component receives props from parent component
 const TodoItem = ({
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   container: {
     marginVertical: 5,
     padding: 15,
-    backgroundColor: colors.white,
+    backgroundColor: Colors.white,
     flexDirection: "row",
     borderRadius: 15,
     alignItems: "center",
@@ -47,17 +47,17 @@ const styles = StyleSheet.create({
     height: 20,
     width: 20,
     borderRadius: 10,
-    backgroundColor: colors.primary,
+    backgroundColor: Colors.primary,
   },
   text: {
-    color: colors.lable,
+    color: Colors.lable,
     fontWeight: "500",
     fontSize: 15,
     flex: 1,
     paddingHorizontal: 10,
   },
   removeText: {
-    color: colors.lable,
+    color: Colors.lable,
     fontWeight: "500",
   },
 });
