@@ -1,17 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import {
-  Text,
-  SafeAreaView,
-  Linking,
-  AppState,
-  StyleSheet,
-  Platform,
-} from "react-native";
+import { Text, SafeAreaView, Linking, AppState, Platform } from "react-native";
 import * as LocalAuthentication from "expo-local-authentication";
 import { StackActions, useNavigation } from "@react-navigation/native";
 import Button from "../../components/Button";
-import { Colors } from "../../types/colors";
 import { routesKey } from "../../types/routesKey";
+import { styles } from "./styles";
 
 const Auth = () => {
   const appState = useRef(AppState.currentState);
@@ -88,20 +81,3 @@ const Auth = () => {
 };
 
 export default Auth;
-
-// Styles for the screen
-const styles = StyleSheet.create({
-  container: {
-    justifyContent: "flex-end",
-    flex: 1,
-    backgroundColor: Colors.white,
-    padding: 20,
-    alignItems: "center",
-  },
-  text: {
-    marginBottom: 15,
-    textAlign: "center",
-    fontSize: 18,
-    fontWeight: "500",
-  },
-});

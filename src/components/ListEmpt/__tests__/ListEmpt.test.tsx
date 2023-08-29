@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react-native";
-import ListEmpt from "../ListEmpt";
+import ListEmpt from "../index";
 
 describe("ListEmpt Component", () => {
   it("renders correctly", () => {

@@ -1,7 +1,7 @@
 import React from "react";
-import { Text, TouchableOpacity, StyleSheet } from "react-native";
-import { Colors } from "../types/colors";
-import { IButton } from "../types/interface";
+import { Text, TouchableOpacity } from "react-native";
+import { IButton } from "../../types/interface";
+import { styles } from "./styles";
 
 // Define the Button component using destructuring for props
 const Button = ({ onPress, title, radius = 100 }: IButton) => {
@@ -18,18 +18,3 @@ const Button = ({ onPress, title, radius = 100 }: IButton) => {
 };
 
 export default Button;
-
-// Styles for the components
-const styles = StyleSheet.create({
-  bottonView: {
-    paddingHorizontal: 30,
-    paddingVertical: 12,
-    borderRadius: 100,
-    backgroundColor: Colors.primary,
-  },
-  bottonText: {
-    fontSize: 18,
-    fontWeight: "bold",
-    color: Colors.white,
-  },
-});

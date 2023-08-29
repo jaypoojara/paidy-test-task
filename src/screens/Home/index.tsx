@@ -1,20 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
-import {
-  View,
-  Text,
-  SafeAreaView,
-  StatusBar,
-  FlatList,
-  TextInput,
-  StyleSheet,
-} from "react-native";
+import { View, Text, SafeAreaView, FlatList, TextInput } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { ITodoItem } from "../../types/interface";
 import TodoItem from "../../components/TodoItem";
 import Button from "../../components/Button";
-import { Colors } from "../../types/colors";
 import { asyncStoragekeys } from "../../types/asyncStoragekeys";
 import ListEmpt from "../../components/ListEmpt";
+import { styles } from "./styles";
 
 const Home = () => {
   // Ref to FlatList for scrolling
@@ -132,34 +124,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// Styles for the screen
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: StatusBar.currentHeight,
-    marginHorizontal: 15,
-    flex: 1,
-    paddingBottom: 20,
-  },
-  headerText: {
-    fontSize: 20,
-    fontWeight: "bold",
-    color: Colors.primary,
-    marginBottom: 10,
-  },
-  flatListContent: {
-    flexGrow: 1,
-  },
-  inputContainer: {
-    marginVertical: 5,
-    paddingVertical: 10,
-    paddingHorizontal: 15,
-    backgroundColor: Colors.white,
-    flexDirection: "row",
-    borderRadius: 15,
-  },
-  input: {
-    flex: 1,
-    fontWeight: "500",
-  },
-});

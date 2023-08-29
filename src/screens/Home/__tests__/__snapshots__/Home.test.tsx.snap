@@ -6,6 +6,7 @@ exports[`Home Component renders correctly 1`] = `
     {
       "flex": 1,
       "marginHorizontal": 15,
+      "paddingBottom": 20,
       "paddingTop": null,
     }
   }
@@ -23,6 +24,7 @@ exports[`Home Component renders correctly 1`] = `
     TODO:
   </Text>
   <RCTScrollView
+    ListEmptyComponent={<ListEmpt />}
     contentContainerStyle={
       {
         "flexGrow": 1,
@@ -46,7 +48,29 @@ exports[`Home Component renders correctly 1`] = `
     stickyHeaderIndices={[]}
     viewabilityConfigCallbackPairs={[]}
   >
-    <View />
+    <View>
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#7a7a7a",
+              "fontSize": 16,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          ToDos not found!
+        </Text>
+      </View>
+    </View>
   </RCTScrollView>
   <View
     style={

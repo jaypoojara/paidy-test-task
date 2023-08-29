@@ -1,7 +1,7 @@
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
-import { ITodoComponent } from "../types/interface";
-import { Colors } from "../types/colors";
+import { ITodoComponent } from "../../types/interface";
+import { styles } from "./styles";
 
 // TodoItem component receives props from parent component
 const TodoItem = ({
@@ -32,32 +32,3 @@ const TodoItem = ({
 };
 
 export default TodoItem;
-
-// Styles for the components
-const styles = StyleSheet.create({
-  container: {
-    marginVertical: 5,
-    padding: 15,
-    backgroundColor: Colors.white,
-    flexDirection: "row",
-    borderRadius: 15,
-    alignItems: "center",
-  },
-  icon: {
-    height: 20,
-    width: 20,
-    borderRadius: 10,
-    backgroundColor: Colors.primary,
-  },
-  text: {
-    color: Colors.lable,
-    fontWeight: "500",
-    fontSize: 15,
-    flex: 1,
-    paddingHorizontal: 10,
-  },
-  removeText: {
-    color: Colors.lable,
-    fontWeight: "500",
-  },
-});

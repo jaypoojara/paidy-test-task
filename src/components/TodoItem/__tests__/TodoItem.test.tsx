@@ -1,6 +1,6 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react-native";
-import TodoItem from "../TodoItem";
+import TodoItem from "../index";
 
 describe("TodoItem Component", () => {
   const mockOnPressTodo = jest.fn();
