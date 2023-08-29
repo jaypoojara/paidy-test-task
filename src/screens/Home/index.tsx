@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { View, Text, SafeAreaView, FlatList, TextInput } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { ITodoItem } from "../../types/interface";
-import TodoItem from "../../components/TodoItem";
+import { IToDoItem } from "../../types/interface";
+import ToDoItem from "../../components/ToDoItem";
 import Button from "../../components/Button";
 import { asyncStoragekeys } from "../../types/asyncStoragekeys";
 import ListEmpt from "../../components/ListEmpt";
@@ -17,7 +17,7 @@ const Home = () => {
   const [selectedTodoIndex, setSelectedTodoIndex] = useState<number | null>(
     null
   );
-  const [todos, setTodos] = useState<ITodoItem[]>([]);
+  const [todos, setTodos] = useState<IToDoItem[]>([]);
 
   useEffect(() => {
     // Load todos from AsyncStorage on component mount
@@ -72,15 +72,15 @@ const Home = () => {
   };
 
   // Store todos to AsyncStorage
-  const storeTodos = async (todos: ITodoItem[]) => {
+  const storeTodos = async (todos: IToDoItem[]) => {
     try {
       await AsyncStorage.setItem(asyncStoragekeys.Todos, JSON.stringify(todos));
     } catch (e) {}
   };
 
   // Render each todo item
-  const renderItem = ({ item, index }: { item: ITodoItem; index: number }) => (
-    <TodoItem
+  const renderItem = ({ item, index }: { item: IToDoItem; index: number }) => (
+    <ToDoItem
       title={item.title}
       index={index}
       onPressRemove={onClickRemove}

@@ -4,7 +4,7 @@ export interface IButton {
   radius?: number;
 }
 
-export interface ITodoItem {
+export interface IToDoItem {
   title: string;
 }
 
