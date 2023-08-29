@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { ITodoComponent } from "../../types/interface";
-import { styles } from "./styles";
+import { Styles } from "./styles";
 
 // TodoItem component receives props from parent component
 const TodoItem = ({
@@ -14,18 +14,18 @@ const TodoItem = ({
     // TouchableOpacity to make the entire item pressable
     <TouchableOpacity
       testID="todoItemTestID"
-      style={styles.container}
+      style={Styles.container}
       onPress={() => onPressTodo && onPressTodo(index)}
     >
       {/* Colored circle icon */}
-      <View style={styles.icon} />
+      <View style={Styles.icon} />
 
       {/* Todo item title */}
-      <Text style={styles.text}>{title}</Text>
+      <Text style={Styles.text}>{title}</Text>
 
       {/* Remove button */}
       <TouchableOpacity onPress={() => onPressRemove && onPressRemove(index)}>
-        <Text style={styles.removeText}>REMOVE</Text>
+        <Text style={Styles.removeText}>REMOVE</Text>
       </TouchableOpacity>
     </TouchableOpacity>
   );

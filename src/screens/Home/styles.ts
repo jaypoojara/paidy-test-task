@@ -2,7 +2,7 @@ import { StatusBar, StyleSheet } from "react-native";
 import { Colors } from "../../types/colors";
 
 // Styles for the screen
-const styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   container: {
     paddingTop: StatusBar.currentHeight,
     marginHorizontal: 15,
@@ -32,4 +32,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export { styles };
+export { Styles };

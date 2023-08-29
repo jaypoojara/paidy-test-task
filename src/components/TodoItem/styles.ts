@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import { Colors } from "../../types/colors";
 
 // Styles for the components
-const styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   container: {
     marginVertical: 5,
     padding: 15,
@@ -30,4 +30,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export { styles };
+export { Styles };

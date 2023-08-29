@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import { Colors } from "../../types/colors";
 
 // Styles for the components
-const styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   emptyContainer: {
     flex: 1,
     justifyContent: "center",
@@ -15,4 +15,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export { styles };
+export { Styles };

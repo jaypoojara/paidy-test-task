@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import { Colors } from "../../types/colors";
 
 // Styles for the screen
-const styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   container: {
     justifyContent: "flex-end",
     flex: 1,
@@ -18,4 +18,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export { styles };
+export { Styles };

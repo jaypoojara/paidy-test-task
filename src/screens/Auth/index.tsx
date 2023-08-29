@@ -4,7 +4,7 @@ import * as LocalAuthentication from "expo-local-authentication";
 import { StackActions, useNavigation } from "@react-navigation/native";
 import Button from "../../components/Button";
 import { routesKey } from "../../types/routesKey";
-import { styles } from "./styles";
+import { Styles } from "./styles";
 
 const Auth = () => {
   const appState = useRef(AppState.currentState);
@@ -67,8 +67,8 @@ const Auth = () => {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>Set Authentication to Proceed</Text>
+    <SafeAreaView style={Styles.container}>
+      <Text style={Styles.text}>Set Authentication to Proceed</Text>
       {enrolledLevel === 0 ? (
         // Display a button to navigate to security settings
         <Button onPress={onClickGoToSetting} title="Go to Settings" />

@@ -1,11 +1,11 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { styles } from "./styles";
+import { Styles } from "./styles";
 
 const ListEmpt = () => {
   return (
-    <View style={styles.emptyContainer}>
-      <Text style={styles.emptyText}>ToDos not found!</Text>
+    <View style={Styles.emptyContainer}>
+      <Text style={Styles.emptyText}>ToDos not found!</Text>
     </View>
   );
 };

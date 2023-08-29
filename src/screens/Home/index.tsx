@@ -6,7 +6,7 @@ import ToDoItem from "../../components/ToDoItem";
 import Button from "../../components/Button";
 import { asyncStoragekeys } from "../../types/asyncStoragekeys";
 import ListEmpt from "../../components/ListEmpt";
-import { styles } from "./styles";
+import { Styles } from "./styles";
 
 const Home = () => {
   // Ref to FlatList for scrolling
@@ -89,15 +89,15 @@ const Home = () => {
   );
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={Styles.container}>
       {/* Header */}
-      <Text style={styles.headerText}>TODO:</Text>
+      <Text style={Styles.headerText}>TODO:</Text>
 
       {/* List of todos */}
       <FlatList
         ref={flatListRef}
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={styles.flatListContent}
+        contentContainerStyle={Styles.flatListContent}
         data={todos}
         keyExtractor={(_, index) => index.toString()}
         renderItem={renderItem}
@@ -105,9 +105,9 @@ const Home = () => {
       />
 
       {/* Input container */}
-      <View style={styles.inputContainer}>
+      <View style={Styles.inputContainer}>
         <TextInput
-          style={styles.input}
+          style={Styles.input}
           placeholder="Enter here"
           value={text}
           onChangeText={setText}

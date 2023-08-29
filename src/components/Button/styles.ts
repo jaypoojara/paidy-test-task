@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import { Colors } from "../../types/colors";
 
 // Styles for the components
-const styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   bottonView: {
     paddingHorizontal: 30,
     paddingVertical: 12,
@@ -16,4 +16,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export { styles };
+export { Styles };
