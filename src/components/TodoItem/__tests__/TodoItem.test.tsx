@@ -1,8 +1,8 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react-native";
-import TodoItem from "../index";
+import ToDoItem from "../index";
 
-describe("TodoItem Component", () => {
+describe("ToDoItem Component", () => {
   const mockOnPressTodo = jest.fn();
   const mockOnPressRemove = jest.fn();
   const title = "Test Todo";
@@ -10,7 +10,7 @@ describe("TodoItem Component", () => {
 
   it("renders correctly", () => {
     const element = render(
-      <TodoItem
+      <ToDoItem
         onPressTodo={mockOnPressTodo}
         onPressRemove={mockOnPressRemove}
         title={title}
@@ -22,7 +22,7 @@ describe("TodoItem Component", () => {
 
   it("renders correctly with the provided props", () => {
     const { getByText, getByTestId } = render(
-      <TodoItem
+      <ToDoItem
         onPressTodo={mockOnPressTodo}
         onPressRemove={mockOnPressRemove}
         title={title}
